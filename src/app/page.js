@@ -1,5 +1,33 @@
 import Image from "next/image";
 
+// ✅ SEO metadata for home page
+export const metadata = {
+  title: "Home", // ye title template ke sath milega: "Home | My VIP Site"
+  description:
+    "Welcome to My VIP Site – premium services, concierge support, exclusive access, and white-glove treatment for elite members.",
+  keywords: [
+    "VIP Home",
+    "Concierge Services",
+    "Premium Membership",
+    "Exclusive Access",
+    "Luxury Support",
+  ],
+  alternates: { canonical: "/" }, // home page canonical hamesha root /
+  openGraph: {
+    title: "My VIP Site – Home",
+    description:
+      "Discover premium VIP experiences, priority access, and concierge services crafted exclusively for you.",
+    url: "https://example.com/",
+    type: "website",
+    siteName: "My VIP Site",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "My VIP Site – Home",
+    description:
+      "Discover premium VIP experiences, priority access, and concierge services crafted exclusively for you.",
+  },
+};
 export default function HomePage() {
   return (
     <div className="bg-black text-gray-200">
@@ -197,11 +225,10 @@ export default function HomePage() {
           ].map((tier) => (
             <div
               key={tier.name}
-              className={`relative rounded-2xl p-6 border ${
-                tier.highlight
-                  ? "border-yellow-400 bg-yellow-500/10"
-                  : "border-yellow-500/20 bg-neutral-950"
-              }`}
+              className={`relative rounded-2xl p-6 border ${tier.highlight
+                ? "border-yellow-400 bg-yellow-500/10"
+                : "border-yellow-500/20 bg-neutral-950"
+                }`}
             >
               {tier.highlight && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full border border-yellow-400 bg-black px-3 py-1 text-xs text-yellow-300">
@@ -223,11 +250,10 @@ export default function HomePage() {
               </ul>
               <a
                 href="#"
-                className={`mt-6 inline-flex w-full items-center justify-center rounded-xl px-4 py-2 font-semibold transition ${
-                  tier.highlight
-                    ? "bg-yellow-500 text-black hover:bg-yellow-400"
-                    : "border border-yellow-500/40 text-yellow-200 hover:bg-yellow-500/10"
-                }`}
+                className={`mt-6 inline-flex w-full items-center justify-center rounded-xl px-4 py-2 font-semibold transition ${tier.highlight
+                  ? "bg-yellow-500 text-black hover:bg-yellow-400"
+                  : "border border-yellow-500/40 text-yellow-200 hover:bg-yellow-500/10"
+                  }`}
               >
                 Choose {tier.name}
               </a>
