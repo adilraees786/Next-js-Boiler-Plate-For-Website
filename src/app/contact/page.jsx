@@ -25,7 +25,7 @@ export default function BlogPage() {
       {/* Header */}
       <header className="bg-white shadow-md sticky top-0 z-50">
         <div className="max-w-4xl mx-auto flex justify-between items-center p-4">
-          <h1 className="text-2xl font-bold text-blue-600">My Blog</h1>
+          <h1 className="font-lobster text-4xl font-bold text-blue-600">My Blog</h1>
           <nav className="space-x-4">
             <a href="#home" className="hover:text-blue-600">Home</a>
             <a href="#posts" className="hover:text-blue-600">Posts</a>
@@ -65,7 +65,7 @@ export default function BlogPage() {
       {/* About Section */}
       <section id="about" className="max-w-4xl mx-auto py-12 px-4 text-center">
         <h2 className="text-3xl font-bold mb-4">About Me</h2>
-        <p className="font-lobster  text-gray-600 max-w-2xl mx-auto">
+        <p className="font-lobster font-bold text-gray-600 max-w-2xl mx-auto">
           I'm a passionate web developer who loves building modern web apps with
           Next.js, React, and Tailwind CSS. This blog is where I share tutorials,
           tips, and insights about coding and design.
