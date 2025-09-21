@@ -1,9 +1,12 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Style+Script&display=swap');
 
  /* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
+  
 
 @theme inline {
   --color-background: var(--background);
@@ -24,3 +27,9 @@ body {
   /* color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif; */
 } 
+
+@theme inline {
+  --font-Bit: 'Bitcount Ink', sans-serif;
+  --font-lobster: 'Lobster Two', cursive;
+}
+

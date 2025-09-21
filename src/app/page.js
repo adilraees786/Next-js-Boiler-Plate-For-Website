@@ -46,14 +46,14 @@ export default function HomePage() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200"> VIP </span>
                 Presence
               </h1>
-              <p className="mt-4 text-lg text-gray-400 max-w-2xl">
+              <p className="font-Bit  mt-4 text-lg text-gray-400 max-w-2xl">
                 Premium services, priority access, and white-glove support—crafted for the few.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <a
                   href="#pricing"
-                  className="inline-flex items-center justify-center rounded-xl bg-yellow-500 px-6 py-3 font-semibold text-black hover:bg-yellow-400 transition"
+                  className="font-Bit inline-flex items-center justify-center rounded-xl bg-yellow-500 px-6 py-3 font-semibold text-black hover:bg-yellow-400 transition"
                 >
                   Get VIP Access
                 </a>
@@ -266,7 +266,9 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16">
         <div className="text-center max-w-xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold">What Members Say</h2>
-          <p className="mt-3 text-gray-400">Real words from our VIP community.</p>
+          <p className="font-lobster text-[20px]  mt-3 text-gray-400">Real words from our VIP community.
+            
+          </p>
         </div>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
